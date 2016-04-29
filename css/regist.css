@@ -5,3 +5,13 @@
  * @date    2016-04-29 17:35:09
  * @version $Id$
  */
+
+#regist-content {
+	width: 100%;
+	height: 669px;
+	overflow: hidden;
+}
+
+#regist-content img {
+	width: 100%;
+}
