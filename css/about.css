@@ -91,17 +91,72 @@ body {
 	font-size: 16px;
 }
 
+#about-head {
+	width: 100%;
+	display: block;
+}
 
-#about-content, .header-content, #coperation, .footer-content {
+#content, .header-content, #coperation, .footer-content {
 	width: 1000px;
 	margin: 0 auto;
 }
 
-#about-content, #coperation {
+#content, #coperation {
 	background-color: #fff;
 	text-align: center;
 	padding: 18px 0;
 	overflow: auto;
+}
+
+#about-content {
+	text-align: left;
+	padding: 17px 80px;
+}
+
+.about-title {
+	color: #fff;
+	text-align: center;
+	background-color: #e87261;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.detail {
+	padding: 0 15px;
+	font-size: 14px;
+	color: #666666;
+	line-height: 30px;
+}
+
+.blue {
+	color: #7cbcc5;
+}
+
+.about-label {
+	color: #fff;
+	padding: 8px 15px;
+	background-color: #7cbcc5;
+	font-size: 15px;
+	display: block;
+	width: 110px;
+	margin-top: 10px;
+}
+
+.num {
+	font-size: 14px;
+	color: #425b6d;
+	margin: 8px 0;
+}
+
+.num span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	color: #fff;
+	background-color: #425b6d;
+	border-radius: 20px;
+	text-align: center;
+	margin: 0 8px;
 }
 
 #coperation {
