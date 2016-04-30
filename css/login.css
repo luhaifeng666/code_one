@@ -136,6 +136,11 @@ body {
 	line-height: 18px;
 }
 
+.nav li.focus a,
+.nav li:hover a {
+	color: #4d697e;
+}
+
 .nav li:first-child {
 	border-left: none;
 }
