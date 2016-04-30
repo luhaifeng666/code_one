@@ -24,6 +24,14 @@ body {
 	font-family: microsoft yahei, Arial;
 }
 
+.grey {
+	background-color: #f6f6f6;
+}
+
+.grey span {
+	color: #e6705f;
+}
+
 #header > .header-top {
 	font-size: 14px;
 	background-color: #e97261;
@@ -96,6 +104,58 @@ body {
 	font-size: 16px;
 }
 
+#pay-head {
+	display: block;
+	width: 100%;
+}
+
+.pay-content table {
+	width: 90%;
+	margin: 20px auto;
+	border: 1px solid #dfdfdf;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table td {
+	padding: 8px 0;
+	font-size: 14px;
+	color: #666666;
+}
+
+table td.intro {
+	text-align: left;
+	padding: 8px 50px;
+}
+
+.table-title td {
+	color: #fff;
+	padding: 10px 0;
+	font-size: 18px;
+}
+
+.table-subhead td {
+	font-size: 15px;
+	color: #7cbcc5;
+	border-top: 1px solid #e0e0e0;
+}
+
+#table1 .table-title {
+	background-color: #e6705f;
+}
+#table2 {
+	margin: 40px auto;
+}
+#table2 .table-title {
+	background-color: #7cbcc5;
+}
+#table2 td,
+#table3 td {
+	border: 1px solid #e0e0e0;
+}
+#table3 .table-title {
+	background-color: #425b6d;
+}
 
 #content, .header-content, #coperation, .footer-content {
 	width: 1000px;
