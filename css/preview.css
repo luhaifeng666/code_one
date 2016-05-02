@@ -40,7 +40,7 @@ i {
 }
 
 .grey {
-	background-color: #f6f6f6;
+	background-color: #f6f6f6 !important;
 	padding: 8px;
 }
 
@@ -168,7 +168,7 @@ table td {
 #end-time,
 #range,
 #search {
-	margin-right: 30px;
+	margin-right: 24px;
 }
 
 #range {

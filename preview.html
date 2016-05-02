@@ -7,6 +7,7 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="css/preview.css" rel="stylesheet">
+<script src="js/laydate.js" type="text/javascript"></script>
 </head>
 <body>
 	<!-- Header -->
@@ -67,9 +68,9 @@
 					<option value="">加利福尼亚仓库(CA)</option>
 				</select>
 				<label for="">时间：</label>
-				<input type="text" id="star-time" class="grey">
+				<input placeholder="请输入日期" id="star-time" class="laydate-icon grey" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 				<span>-</span>
-				<input type="text" id="end-time" class="grey">
+				<input placeholder="请输入日期" id="end-time" class="laydate-icon grey" onClick="laydate({istime: true, format: 'YYYY-MM-DD hh:mm:ss'})">
 				<select name="" id="range" class="grey">
 					<option value="">全部</option>
 				</select>
