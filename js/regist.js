@@ -5,12 +5,6 @@
  * @version $Id$
  */
 $(function(){
-	var slide = function(name) {
-		setTimeout(function(){
-			name.addClass('hide').text('');
-		},1500);
-	}
-
 	var check = function(name, rule) {
 		return rule.test(name);
 	}
@@ -21,14 +15,21 @@ $(function(){
 			var mail = $el.val(),
 				checkMail = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
 			if(check(mail, checkMail)){
-				return;
+				$el.siblings('p.tip').addClass('hide');
 			}else {
 				$el.siblings('p.tip').removeClass('hide').text('无效的邮箱地址');
-				slide($el.siblings('p.tip'));
 			}
 		}else {
 			$el.siblings('p.tip').removeClass('hide').text('请输入邮箱地址');
-			slide($el.siblings('p.tip'));
+		}
+	});
+
+	$('#rg-pwd').blur(function(){
+		var $el = $(this);
+		if($el.val() != ''){
+			$el.siblings('p.tip').addClass('hide');
+		}else {
+			$el.siblings('p.tip').removeClass('hide').text('请输入密码');
 		}
 	});
 
@@ -38,14 +39,12 @@ $(function(){
 			var ewpwd = $el.val(),
 				pwd = $('#rg-pwd').val();
 			if(ewpwd === pwd){
-				return;
+				$el.siblings('p.tip').addClass('hide');
 			}else {
 				$el.siblings('p.tip').removeClass('hide').text('两次密码不一致');
-				slide($el.siblings('p.tip'));
 			}
 		}else {
 			$el.siblings('p.tip').removeClass('hide').text('请再次输入密码');
-			slide($el.siblings('p.tip'));
 		}
 	});
 
@@ -55,14 +54,12 @@ $(function(){
 			var checkNum = $el.val(),
 				type = /^\d+$/;
 			if(checkNum.length == 6 && check(checkNum, type)){
-				return;
+				$el.siblings('p.tip').addClass('hide');
 			}else {
 				$el.siblings('p.tip').removeClass('hide').text('验证码应为6位数字');
-				slide($el.siblings('p.tip'));
 			}
 		}else {
 			$el.siblings('p.tip').removeClass('hide').text('请填写验证码');
-			slide($el.siblings('p.tip'));
 		}
 	});
 	
@@ -73,18 +70,15 @@ $(function(){
 				nameCheck = /^[A-Za-z]+$/;
 			if(ename.length >= 5 && ename.length <= 13){
 				if(check(ename, nameCheck)) {
-					return;
+					$el.siblings('p.tip').addClass('hide');
 				}else {
 					$el.siblings('p.tip').removeClass('hide').text('请填写英文名');
-					slide($el.siblings('p.tip'));
 				}
 			}else {
 				$el.siblings('p.tip').removeClass('hide').text('请填写5-13位字符');
-				slide($el.siblings('p.tip'));
 			}
 		}else {
 			$el.siblings('p.tip').removeClass('hide').text('请填写英文名');
-			slide($el.siblings('p.tip'));
 		}
 	});
 
