@@ -25,6 +25,10 @@ body {
 	font-family: microsoft yahei, Arial;
 }
 
+.hide {
+	display: none;
+}
+
 #content, .header-content, #coperation, .footer-content {
 	width: 1000px;
 	margin: 0 auto;
@@ -207,13 +211,15 @@ body {
 #remember {
 	text-align: left;
 	color: #7e7878;
-	font-size: 12px;
-	margin: 8px 0 16px;
+	font-size: 14px;
+	padding-left: 10px;
+	color: #ee7766;
+	margin: -8px 0 -16px;
 }
 
-#remember input {
-	vertical-align: middle;
-	margin-right: 5px;
+#remember span {
+	vertical-align: sub;
+	font-size: 25px;
 }
 
 #login-btn {
@@ -227,6 +233,7 @@ body {
 	letter-spacing: 5px;
 	padding: 8px 0;
 	font-family: microsoft yahei;
+	margin-top: 16px;
 }
 
 #forget {

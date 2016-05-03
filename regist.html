@@ -7,6 +7,8 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link href="css/regist.css" rel="stylesheet">
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/regist.js" type="text/javascript"></script>
 </head>
 <body>
 	<!-- Header -->
@@ -46,10 +48,12 @@
     			<h3 class="regist-title">找回密码</h3>
     			<p class="label">邮箱地址<i>*</i></p>
     			<input type="text" id="mail-address">
+    			<p class="tip hide"></p>
     			<p class="label">验证码<i>*</i></p>
     			<div>
     				<input type="text" id="find-checkNum">
     				<span id="find-check">免费获取验证码</span>
+    				<p class="tip hide"></p>
     			</div>
     			<p id="find-sub" class="btn">
     				提交
@@ -59,11 +63,24 @@
     		</div>
     		<div id="registbox" class="">
     			<h3 class="regist-title">创建您的账户</h3>
-				<div><span>登录邮箱</span><input type="text" id="rg-mail"><i>*</i></div>
-				<div><span>登录密码</span><input type="password" id="rg-pwd"><i>*</i></div>
-				<div><span>确认密码</span><input type="password" id="rg-repwd"><i>*</i></div>
-				<div><span>英文名</span><input type="text" id="rg-ename"><i>*</i></div>
-				<div><span>验证码</span><input type="text" id="rg-check"><i>*</i></div>
+				<div><span>登录邮箱</span><input type="text" id="rg-mail"><i>*</i>
+					<p class="tip hide"></p>
+				</div>
+				<div><span>登录密码</span><input type="password" id="rg-pwd"><i>*</i>
+					<p class="tip hide"></p>
+				</div>
+				<div><span>确认密码</span><input type="password" id="rg-repwd"><i>*</i>
+					<p class="tip hide"></p>
+				</div>
+				<div><span>英文名</span><input type="text" id="rg-ename"><i>*</i>
+					<p class="tip hide"></p>
+				</div>
+				<div><span>验证码</span><input type="text" id="rg-check"><i>*</i>
+					<p class="tip hide"></p>
+				</div>
+				<p id="recive">
+				<input type="checkbox" id="rule" >
+				我已阅读并接受<a href="javascript:;">《霓虹运用户使用协议》</a></p>
     			<p id="regist-sub" class="btn">
     				注册
     				<span>></span>
