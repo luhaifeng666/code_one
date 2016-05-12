@@ -70,12 +70,20 @@ body {
 }
 
 #order-search {
-	padding: 8px;
+	position: relative;
+}
+
+#order-search > input {
+	padding: 8px 30px 8px 8px;
 	border-radius: 5px;
 	border: 1px solid #4d697e;
-	background-image: url('../images/search.png');
-	background-repeat: no-repeat;
-	background-position: 95%;
+}
+
+#order-search img {
+	position: absolute;
+	right: 65px;
+	top: 5px;
+	cursor: pointer;
 }
 
 #service h3 {
